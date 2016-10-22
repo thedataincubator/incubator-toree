@@ -38,8 +38,11 @@ object SparkKernelInfo {
   /**
    * Represents the language supported by the kernel.
    */
-  val language_info           = Map("name" -> "scala", "version" -> BuildInfo.scalaVersion)
-
+  val language_info           = Map("name" -> "scala",
+                                    "version" -> BuildInfo.scalaVersion,
+                                    "mimetype" -> "text/x-scala",
+                                    "file_extension" -> "scala",
+                                    "codemirror_mode" -> "text/x-scala")
   /**
    * Represents the displayed name of the kernel.
    */
